@@ -2,7 +2,7 @@
 
 
 ### Markdown 
-- :blue_book: [All gist emoji](https://gist.github.com/rxaviers/7360908)
+- :blue_book: [Gist 이모지](https://github.com/LeeJun1118/TIL/blob/main/markdown/emoji.md)
 
 ---
 

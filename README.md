@@ -1,7 +1,6 @@
 # Today I Learned(TIL) Wiki
 
 
----
 ### Markdown 
 - :blue_book: [All gist emoji](https://gist.github.com/rxaviers/7360908)
 

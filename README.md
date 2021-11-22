@@ -14,3 +14,6 @@
 
 ### :herb: Thymeleaf
 - :bulb: [thymeleaf 까먹기 쉬운 문법](https://github.com/LeeJun1118/TIL/blob/main/thymeleaf/tip.md)
+
+### Spring
+- [IoC(Inversion of Control) - 제어의 역전](https://github.com/LeeJun1118/TIL/blob/main/spring/ioc.md)

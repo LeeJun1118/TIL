@@ -16,7 +16,7 @@
 
 ### 🌿 Thymeleaf
 
-- 💡 [thymeleaf 까먹기 쉬운 문법](https://github.com/LeeJun1118/TIL/blob/main/thymeleaf/tip.md)
+- 💡 [thymeleaf 까먹기 쉬운 문법](https://github.com/LeeJun1118/TIL/blob/main/thymeleaf/my-tip.md)
 
 ### 🍃 Spring
 
@@ -24,3 +24,5 @@
     - Spring 공식 문서(docs) URL
     - Spring Framework Initialize Project
 - ✨ [IoC(Inversion of Control) - 제어의 역전](https://github.com/LeeJun1118/TIL/blob/main/spring/ioc.md)
+- 🚢 [Container](https://github.com/LeeJun1118/TIL/blob/main/spring/container.md)
+- 💿 [Spring Bean](https://github.com/LeeJun1118/TIL/blob/main/spring/bean.md)

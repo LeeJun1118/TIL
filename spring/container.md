@@ -1,4 +1,4 @@
-# 🚢 Container
+# 🚢 Container (Spring DI Container == IoC Container)
 
 Spring 의 Container 는 프로그래머가 작성한 코드의 처리과정을 위임받아 독립적으로 처리하는 존재이다. 쉽게 말하면 객체관리를 주로 수행하는 그릇이라 할 수 있다.
 
@@ -15,15 +15,16 @@ Spring 의 Container 는 프로그래머가 작성한 코드의 처리과정을 
 
 ## 📜 종류
 
-### BeanFactory (Spring DI Container)
+### 1. BeanFactory
 
 - **[Bean](https://github.com/LeeJun1118/TIL/blob/main/spring/bean.md)** 을 등록, 생성, 조회(getBean())하는 인터페이스이다.
 - 디자인패턴의 일종인 팩토리 패턴을 구현한 것이다.
 - Lazy init : 클라이언트의 요청이 있을 때(getBean()) 객체를 생성한다.
 
-### ApplicationContext
+### 2.ApplicationContext (extends BeanFactory)
 
-- BeanFactory 를 상속받은 interface 이다.
+- BeanFactory 를 상속한 interface 이다.
+- BeanFactory 기능외에 추가적으로 AOP 와 같이 대규모 웹 프로젝트에 필요한 여러 확장 기능들을 포함한다.(이로인해 Spring 프로젝트의 대부분은 ApplicationContext 을 통해 Bean 을 관리한다.)
 - Eager init : ApplicationContext 생성 시 Bean 객체를 모두 생성한다.
 
 ## Configuration MetaData

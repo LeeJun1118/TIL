@@ -1,4 +1,4 @@
-# :pencil: Thymeleaf Tip
+# 📝 Thymeleaf Tip
 
 ### Spring Security 적용했을 때
 ```thymeleafexpressions

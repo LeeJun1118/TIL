@@ -1,9 +1,9 @@
-# :key: 토큰 기반 인증
+# 🔑 토큰 기반 인증
 
 [Velopert님의 설명](https://velopert.com/2350)
 을 참고했다.
 
-### :grey_question: 토큰을 사용하는 주요 이유
+### ❓ 토큰을 사용하는 주요 이유
 
 <span style="color:red">충분히 암호화된 상태</span>로 주고 받을 수 있고 <span style="color:red">critical한 데이터를 값 내부에 포함하지 않는다</span>
 
@@ -26,7 +26,7 @@
 
 --- 
 
-### :anguished: 과거의 인증 시스템
+### 😧 과거의 인증 시스템
 
 기존의 인증 시스템에서는 서버 측에서 유저들의 정보를 기억하고 있어야 했다. 세션을 유지하기 위해 메모리, 디스크, 데이터베이스 등 여러가지 방법이 사용되었다. </br>
 <img src="https://velopert.com/wp-content/uploads/2016/12/bb.png"/></br>
@@ -40,7 +40,7 @@
 - CORS(Cross-Origin Resource Sharing)
     - 웹 어플리케이션에서 세션을 관리할 때 자주 사용되는 쿠키는 단일 도메인 및 서브 도메인에서만 작동하도록 설계되어있다. 따라서 쿠키를 여러 도메인에서 관리하는 것은 번거롭다.
 
-### :relaxed: 토큰 기반 시스템의 작동 원리
+### ☺️토큰 기반 시스템의 작동 원리
 
 1. 유저가 아이디와 비밀번호로 **로그인**한다.
 2. 서버 측에서 해당 **계정 정보를 검증**한다.
@@ -51,7 +51,7 @@
    <img src="https://velopert.com/wp-content/uploads/2016/12/token-diagram.png"/></br>
    웹 서버에서 토큰을 서버에 전달할 때는 HTTP 요청의 헤더에 토큰 값을 포함해서 전달한다.
 
-### :+1: 토큰의 장점
+### 👍 토큰의 장점
 
 - #### Stateless(무상태)이며 확장성(Scalability)이 있다.
 - #### 보안성

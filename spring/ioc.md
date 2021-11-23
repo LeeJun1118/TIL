@@ -1,6 +1,6 @@
 # :sparkles: IoC(Inversion of Control)
 
-## ❓ :question: 일반적인 의존 관계와 의존 관계 역전
+##❓ 일반적인 의존 관계와 의존 관계 역전
 
 #### 참고 블로그 :  [sehun-kim.github.io](https://sehun-kim.github.io/sehun/springbean-lifecycle/)
 

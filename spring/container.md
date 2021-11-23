@@ -27,7 +27,7 @@ Spring 의 Container 는 프로그래머가 작성한 코드의 처리과정을 
 - BeanFactory 기능외에 추가적으로 AOP 와 같이 대규모 웹 프로젝트에 필요한 여러 확장 기능들을 포함한다.(이로인해 Spring 프로젝트의 대부분은 ApplicationContext 을 통해 Bean 을 관리한다.)
 - Eager init : ApplicationContext 생성 시 Bean 객체를 모두 생성한다.
 
-## Configuration MetaData
+## 📇 Configuration MetaData
 
 Container 에 Bean 의 메타정보를 등록하기 위한 설정방법
 

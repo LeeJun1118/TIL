@@ -1,4 +1,4 @@
-# :sparkles: IoC(Inversion of Control)
+# ✨  IoC(Inversion of Control)
 
 ## ❓ 일반적인 의존 관계와 의존 관계 역전
 
@@ -15,8 +15,6 @@
 
 메소드나 객체의 호출과 생성 작업부터 생명주기의 관리까지 모든 객체에 대한 것을 개발자가 결정하는 것이 아니라 **외부에서 결정되는 것**을 의미한다.</br>
 
-Spring 에서 **@Component** 어노테이션이 붙은 클래스들은 Spring의 **Container**가 알아서 **Spring Bean** 객체로 등록하고 생성한다.  </br>
+Spring 에서 **@Component** 어노테이션이 붙은 클래스들은 Spring의 **[Container](https://github.com/LeeJun1118/TIL/blob/main/spring/container.md)** 가 알아서  **[Bean](https://github.com/LeeJun1118/TIL/blob/main/spring/bean.md)** 객체로 등록하고 생성한다.  </br>
 이렇게 생성된 객체는 자신이 어디에 쓰일지 알지 못하고 **Container** 가 **@Autowired**라는 어노테이션이 붙은 변수의 타입(타입이 같은 Bean이 여러개라면 이름을 본다)을 보고 해당
 변수에 **객체를 주입(DI : 의존성 주입)한다.**
-
-## :ship: Container

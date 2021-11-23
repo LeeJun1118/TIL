@@ -39,7 +39,7 @@ Container 에 Bean 의 메타정보를 등록하기 위한 설정방법
 <beans>
     <bean id="beanA" class="test.bean.BeanA"/>
     <bean id="beanB" class="test.bean.BeanB">
-        <property name="beanA" ref="beanA"></property>
+        <property name="beanA" ref="beanA"/>
     </bean>
 </beans>
 ```

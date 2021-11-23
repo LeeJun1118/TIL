@@ -1,6 +1,6 @@
 # :sparkles: IoC(Inversion of Control)
 
-## 일반적인 의존 관계와 의존 관계 역전
+## ❓ :question: 일반적인 의존 관계와 의존 관계 역전
 
 #### 참고 블로그 :  [sehun-kim.github.io](https://sehun-kim.github.io/sehun/springbean-lifecycle/)
 
@@ -19,4 +19,4 @@ Spring 에서 **@Component** 어노테이션이 붙은 클래스들은 Spring의
 이렇게 생성된 객체는 자신이 어디에 쓰일지 알지 못하고 **Container** 가 **@Autowired**라는 어노테이션이 붙은 변수의 타입(타입이 같은 Bean이 여러개라면 이름을 본다)을 보고 해당
 변수에 **객체를 주입(DI : 의존성 주입)한다.**
 
-## Container
+## :ship: Container

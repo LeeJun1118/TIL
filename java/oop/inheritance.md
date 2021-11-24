@@ -45,8 +45,10 @@ public class Main {
     }
 }
 ```
-
-결과 : poppy zzzzzzzz
+```markdown
+[결과]
+poppy zzzzzzzz
+```
 
 Dog 클래스에 name 이라는 객체 변수와 setName 이라는 메소드를 만들지 않았지만 Animal 클래스를 상속 받았기 때문에 그대로 사용이 가능하다.
 
@@ -78,7 +80,7 @@ Object animal = new Animal();
 Object dog = new Dog();
 ```
 
-## 오버라이딩 (변경 또는 덮어쓰기)
+## 오버라이딩 (부모 클래스의 메소드 재정의)
 
 부모 클래스의 메소드를 자식 클래스가 동일한 형태로 또 다시 구현하는 것
 
@@ -102,7 +104,7 @@ public class Main {
 
 결과 : poppy house dog zzzzzzzzz
 
-## 오버로딩(추가)
+## 오버로딩 (새로운 메소드 추가)
 
 동일한 이름의 메소드를 생성한다. 단, 메소드의 입력 항목이 다를 경우만 가능하다.
 
@@ -114,33 +116,35 @@ class Dog extends Animal {
 }
 
 class HouseDog extends Dog {
-    
-    //오버라이딩
     @Override
     public void sleep() {
-        System.out.println("house dog zzzzzzzzz");
+        System.out.println(" house dog zzzzzzzzz => 오버라이드");
     }
-    
-    //오버로딩
-    public void sleep(int hour) {
-        System.out.println("house dog " + hour + " zzzzzzzzz");
+    public void sleep(int hour){
+        System.out.println("house dog " + hour + " zzzzzzzzz => 오버로딩");
     }
 }
 
-public class Main {
+public class test {
     public static void main(String[] args) {
         Dog dog = new HouseDog();
         HouseDog houseDog = new HouseDog();
 
-        dog.setName("pp");
-        System.out.println(dog.name);
+        dog.setName("Dog");
+        System.out.print(dog.name);
         dog.sleep();
-        // dog.sleep(3); 에러 => HouseDog 으로 만든 Dog 객체인데 Dog Class 에는 sleep(int) 메소드가 없다
+        // dog.sleep(3); 에러 : HouseDog 으로 만든 Dog 객체인데 Dog 에는 sleep(int) 메소드가 없다
 
-        houseDog.setName("pp");
-        System.out.println(houseDog.name);
+        houseDog.setName("poppy");
+        System.out.print(houseDog.name);
         houseDog.sleep();
         houseDog.sleep(3);
     }
 }
+```
+```markdown
+[결과]
+Dog house dog zzzzzzzzz => 오버라이드
+poppy house dog zzzzzzzzz => 오버라이드
+house dog 3 zzzzzzzzz => 오버로딩
 ```

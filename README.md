@@ -8,7 +8,7 @@
 
 ### 🔠 Java
 - [객체지향](https://github.com/LeeJun1118/TIL/tree/main/java/oop)
-  - [클래스, 객체, 인스턴스](https://github.com/LeeJun1118/TIL/blob/main/java/oop/class_object_instance.md)
+  - 💥 [클래스, 객체, 인스턴스](https://github.com/LeeJun1118/TIL/blob/main/java/oop/class_object_instance.md)
 
 ### 📬 HTTP
 

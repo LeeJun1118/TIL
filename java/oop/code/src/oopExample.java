@@ -25,7 +25,7 @@ interface Herbivore {
 
 class Lion extends Animal implements Predator {
 
-    //부모인 Animal 에 getName()이 이미 구현되어있으니 여기서 따로 구현할 필요가 없다.
+    //부모인 Animal 에 getName()이 이미 구현되어 있으니 여기서 따로 @Override 할 필요가 없다.
 
     @Override
     public String getMeat() {
@@ -35,7 +35,7 @@ class Lion extends Animal implements Predator {
 
 class Tiger extends Animal implements Predator {
 
-    //부모인 Animal 에 getName()이 이미 구현되어있으니 여기서 따로 구현할 필요가 없다.
+    //부모인 Animal 에 getName()이 이미 구현되어 있으니 여기서 따로 @Override 할 필요가 없다.
 
     @Override
     public String getMeat() {
@@ -45,7 +45,7 @@ class Tiger extends Animal implements Predator {
 
 class Rabbit extends Animal implements Herbivore {
 
-    //부모인 Animal 에 getName()이 이미 구현되어있으니 여기서 따로 구현할 필요가 없다.
+    //부모인 Animal 에 getName()이 이미 구현되어 있으니 여기서 따로 @Override 할 필요가 없다.
 
     @Override
     public String getVegetable() {

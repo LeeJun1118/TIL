@@ -63,7 +63,7 @@ class ZooKeeper {
     }
 }
 
-public class oopExample {
+public class InheritanceAndInterface {
     public static void main(String[] args) {
         ZooKeeper zooKeeper = new ZooKeeper();
 

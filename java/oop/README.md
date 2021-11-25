@@ -13,5 +13,5 @@
 ### 참고
 
 - [점프 투 자바](https://wikidocs.net/218)
-- [TCP School](https://wikidocs.net/214)
+- [TCP School](http://www.tcpschool.com/java/java_inheritance_concept)
 - [gmlwjd9405.github.io](https://gmlwjd9405.github.io/2018/09/17/class-object-instance.html)

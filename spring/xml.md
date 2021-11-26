@@ -65,8 +65,3 @@ prefix 속성값에는 이름 앞에 붙게 되는 네임스페이스 접두사�
     </b:body>
 </root>
 ```
-
-### beans
-
-dispatcher-servlet.xml 혹은 applicationContext.xml 의 루트태그. 스프링 bean 이 사용할 라이브러리를 정의한다. `<beans>` 의 속성값은 실제 참조하는 스프링 라이브러리
-버전에 따라 달라진다.

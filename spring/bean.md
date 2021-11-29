@@ -60,7 +60,6 @@ XML 스키마 스타일
 예제
 
 ```xml
-
 <bean id="dog" class="com.spring.Dog"></bean>
 <bean id="cat" class="com.spring.Cat" scope="singleton"></bean>
 <bean id="owner" class="com.spring.Owner">

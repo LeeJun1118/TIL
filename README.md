@@ -31,5 +31,6 @@
 - ✨ [IoC(Inversion of Control) - 제어의 역전](https://github.com/LeeJun1118/TIL/blob/main/spring/ioc.md)
 - 🚢 [Container](https://github.com/LeeJun1118/TIL/blob/main/spring/container.md)
 - 💿 [Spring Bean](https://github.com/LeeJun1118/TIL/blob/main/spring/bean.md)
+  - [Spring Bean XML 설정 예제 코드](https://github.com/LeeJun1118/spring-frame-work-test-project)
 - 💡 [Annotation](https://github.com/LeeJun1118/TIL/blob/main/spring/annotation.md)
 - 🎡 [XML](https://github.com/LeeJun1118/TIL/blob/main/spring/xml.md)

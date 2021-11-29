@@ -18,7 +18,7 @@ Spring Framework 의 **[Container](https://github.com/LeeJun1118/TIL/blob/main/s
 
 ## XML 설정
 
-[Spring Bean 설정 예제 코드](https://github.com/LeeJun1118/spring-frame-work-test-project)
+[Spring Bean XML 설정 예제 코드](https://github.com/LeeJun1118/spring-frame-work-test-project)
 
 ### `<beans></<beans>`
 

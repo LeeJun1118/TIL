@@ -18,6 +18,8 @@ Spring Framework 의 **[Container](https://github.com/LeeJun1118/TIL/blob/main/s
 
 ## XML 설정
 
+[Spring Bean 설정 예제 코드](https://github.com/LeeJun1118/spring-frame-work-test-project)
+
 ### `<beans></<beans>`
 
 dispatcher-servlet.xml 혹은 applicationContext.xml 의 루트태그로 스프링 bean 이 사용할 라이브러리를 정의한다. `<beans>` 의 속성값은 실제 참조하는 스프링 라이브러리

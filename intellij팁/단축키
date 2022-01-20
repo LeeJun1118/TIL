@@ -1,0 +1,11 @@
+# 단축키
+
+- ctrl + shift + Enter : 현재 구문 완성
+- ctrl + alt + shift + T  :  사용 가능한 리팩토링 옵션 표시
+- ctrl + (shift) + W : 선택 영역 확대(축소)
+- shift + shift : 전체 검색
+  - ctrl + shift + A : 모든 액션 검색 가능
+- ctrl + E : 최근 실행했던 파일 확인
+- ctrl + (alt) + B : 함수의 선언(구현)으로 이동
+- ctrl + ctrl : 어떤 항목이든 실행 가능
+- alt + F7 : 프로젝트 내 어떤 항목이 사용된 위치 검색

@@ -9,3 +9,9 @@
 - ctrl + (alt) + B : 함수의 선언(구현)으로 이동
 - ctrl + ctrl : 어떤 항목이든 실행 가능
 - alt + F7 : 프로젝트 내 어떤 항목이 사용된 위치 검색
+
+- System.out.print 단축키
+  - sout : 기본
+  - soutm : 메소드명 출력
+  - soutp : 입력받은 파라미터들 출력
+  - soutv : 메소드 내에서 사용 가능한 변수 출력 

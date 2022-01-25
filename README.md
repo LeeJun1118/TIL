@@ -12,7 +12,7 @@
   - 👪 [상속](https://github.com/LeeJun1118/TIL/blob/main/java/oop/inheritance.md)
 
 ## JavaScript
-- [프로토타입](https://github.com/LeeJun1118/TIL/blob/main/javascript/javascript.md)
+- [프로토타입](https://github.com/LeeJun1118/TIL/blob/main/javascript/prototypes.md)
 
 ### 📬 HTTP
 

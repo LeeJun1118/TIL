@@ -11,7 +11,7 @@
   - 💥 [클래스, 객체, 인스턴스](https://github.com/LeeJun1118/TIL/blob/main/java/oop/class_object_instance.md)
   - 👪 [상속](https://github.com/LeeJun1118/TIL/blob/main/java/oop/inheritance.md)
 
-## JavaScript
+### JavaScript
 - [프로토타입](https://github.com/LeeJun1118/TIL/blob/main/javascript/prototypes.md)
 
 ### 📬 HTTP

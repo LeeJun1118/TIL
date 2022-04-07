@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>tutorialsteacher.com/d3js</title>
+        <script src='https://d3js.org/d3.v4.js'></script>
+        <script src="https://cdn.jsdelivr.net/npm/d3-array@3"></script>
+
+        <!--https://www.tutorialsteacher.com/d3js-->
+    <body>
+
+        <!--
+        <div id="d3_style">style</div>
+        <div id="d3_line_chart">line chart</div>
+        <div id="d3_scale">scale</div>
+        <div id="d3_axis_x">x축</div>
+        -->
+        <div id="d3_axis_y">y축</div>
+
+        <!--svg element 스타일링-->
+        <script>
+            var width = 500;
+            var height = 500;
+
+            //svg 생성
+            var svg = d3.select('#d3_style')
+                .append('svg')
+                .attr('width', width)
+                .attr('height', height);
+
+            //그룹 요소 생성
+            var g = svg.append('g')
+                .attr('transform', function (d, i) {
+                    return 'translate(0,0)';
+                });
+
+            //도형 생성
+            var ellipse = g.append('ellipse')
+                .attr('cx', 250)
+                .attr('cy', 50)
+                .attr('rx', 150)
+                .attr('ry', 50)
+
+                //요소의 채우기 색상
+                .attr('fill', 'green');
+
+            //그룹에 텍스트 요소 생성 및 추가
+            g.append('text')
+                .attr('x', 150)
+                .attr('y', 50)
+
+                //stroke : 획 색상
+                .attr('stroke', 'black')
+
+                //font-family : 글꼴
+                .attr('font-family', 'sans-serif')
+
+                //글꼴 크기
+                .attr('font-size', '24px')
+
+                //투명도 : 0 불투명 -> 1 투명
+                .attr('opacity', '0.6')
+                .text('this is an Figure');
+        </script>
+
+        <!--수평 막대 차트-->
+        <script>
+            //데이터 배열 정의
+            var data = [5, 10, 12];
+            var width = 200, //svg 너비
+                scaleFactor = 10, //배율 인수 :데이터 값이 너무 작기 때문에 화면에 표시되는 픽셀 값으로 크기를 조정해야한다.
+                barHeight = 20; //수평 막대의 정적 높이
+
+            //svg 생성
+            var graph = d3.select('#d3_line_chart')
+                .append('svg')
+                .attr('width', width)
+                .attr('height', barHeight * data.length);  // 높이는 막대 높이 * 데이터 값의 수
+
+
+            //그룹 요소 생성
+            var bar = graph.selectAll('g')
+                .data(data)
+                .enter().append('g') //각 막대를 해당 <g>요소 안에 배치
+                .attr('transform', function (d, i) {
+                    //수평 막대 차트이기 때문에 각 그룹의 요소를 다른 요소 아래에 배치
+                    return 'translate(0,' + i * barHeight + ')';
+                })
+
+
+            //도형 생성
+            bar.append('rect')
+                .attr('width', function (d) {
+                    //너비 : 데이터 값 * 배율 인수
+                    return d * scaleFactor;
+                })
+                //높이 : 막대 높이 - 여백
+                .attr('height', barHeight - 1);
+
+
+            //데이터 값을 bar에 텍스트로 표시
+            bar.append('text')
+                .attr('x', function (d) {
+                    return (d * scaleFactor);
+                })
+                .attr('y', barHeight / 2)
+                .attr('dy', '.35em')
+                .text(function (d) {
+                    return d;
+                })
+                .attr('stroke', 'black');
+
+        </script>
+
+        <!--d3 scale-->
+        <script>
+            /*d3 scales : 데이터 값이 너무 크거나 작을 때 크기 조정하는 함수들
+            Continuous (Linear, Power, Log, Identity, Time, Radial)
+            Sequential, Quantize, Quantile, Threshold, Band, Point, Ordinal*/
+            var data = [100, 400, 300, 900, 850, 1000]
+
+            var width = 500,
+                barHeight = 20,
+                margin = 1;
+
+
+            //도메인 값이 100,1000 인 선형 스케일 변수
+            var scale = d3.scaleLinear() //입력 데이터(도메인)가 지정된 출력 범위에 매핑되는 연속 선형 스케일을 구성
+                .domain([d3.min(data), d3.max(data)]) //입력 데이터의 최소값과 최대값
+                .range([50, 500]); //입력 값을 매핑하려는 출력 범위
+
+            //svg 생성
+            var svg = d3.select('#d3_scale')
+                .append('svg')
+                .attr('width', width)
+                .attr('height', barHeight * data.length);
+
+            //그룹 요소 생성
+            var g = svg.selectAll("g")
+                .data(data)
+                .enter().append('g')
+                .attr('transform', function (d, i) {
+                    return 'translate(0,' + i * barHeight + ')';
+                });
+
+            //도형 생성
+            g.append('rect')
+                .attr('width', function (d) {
+                    return scale(d);
+                })
+                .attr('height', barHeight - margin)
+                .attr('fill', 'orange');
+
+            g.append('text')
+                .attr('x', function (d) {
+                    return scale(d);
+                })
+                .attr('y', barHeight / 2)
+                .attr('dy', '.35em')
+                .text(function (d) {
+                    return d;
+                });
+        </script>
+
+        <!--d3 X 축-->
+        <script>
+            var width = 400,
+                height = 100;
+
+            var data = [10, 15, 20, 25, 30];
+
+            //
+            var svg = d3.select('#d3_axis_x')
+                .append('svg')
+                .attr('width', width)
+                .attr('height', height);
+
+            var scale = d3.scaleLinear()
+                .domain([d3.min(data), d3.max(data)])
+                .range([0, width - 100]);
+
+            //x축 설정 : axisBottom
+            var x_axis = d3.axisBottom()
+                .scale(scale);
+
+            svg.append('g')
+                .call(x_axis);
+        </script>
+
+        <!--d3 y 축-->
+        <script>
+            var width = 400, height = 400;
+
+            var data = [10, 15, 20, 25, 30];
+
+            //svg 생성
+            var svg = d3.select('#d3_axis_y')
+                .append('svg')
+                .attr('width', width)
+                .attr('height', height);
+
+            //선형 scale 생성
+            var scale = d3.scaleLinear()
+                .domain([d3.min(data), d3.max(data)])
+                .range([height / 2, 0]);
+
+            //y축 생성
+            var y_axis = d3.axisLeft().scale(scale);
+
+            svg.append('g')
+                .attr('transform', 'translate(50,10)')
+                .call(y_axis);
+        </script>
+    </body>
+    </head></html>

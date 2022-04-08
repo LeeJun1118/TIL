@@ -303,7 +303,7 @@
                     .call(d3.axisBottom(xScale))
                     .append('text')
 
-                    //범례
+                    //라벨
                     .attr('x', width_margin - 100)
                     .attr('y', height_margin - 250)
                     .attr('text-anchor', 'end')
@@ -315,6 +315,8 @@
                     .call(d3.axisLeft(yScale).tickFormat(function (d) {
                         return '$' + d;
                     }).ticks(10))
+
+                    //라벨
                     .append('text')
                     .attr('transform', 'rotate(-90)')
                     .attr('y', 6)
